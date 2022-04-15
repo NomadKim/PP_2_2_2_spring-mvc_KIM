@@ -5,7 +5,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import web.ReturnCars;
-import web.model.Car;
 
 import javax.servlet.http.HttpServletRequest;
 
