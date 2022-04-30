@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
-import web.ReturnCars;
+import web.serviceDAO.CarsDataImplementation;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 public class CarController {
 
     @Autowired
-    private ReturnCars returnCars;
+    private CarsDataImplementation returnCars;
 
     @GetMapping("/cars")
     public String carGet(HttpServletRequest request, ModelMap model){
